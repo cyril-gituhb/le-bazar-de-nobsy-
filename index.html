@@ -1,57 +1,84 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vancyr Ludo - Jeu Web</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- ========== SEO + INDEXATION ========== -->
+    <meta name="description" content="Le bazar de Nobsy - Articles variés à bon prix avec livraison à Joliette, Québec">
+    <meta name="keywords" content="bazar, bons deals, achat en ligne, Nobsy, pas cher, Canada, Montréal, Toronto, Joliette">
+    <meta name="author" content="Le bazar de Nobsy">
+    <meta name="language" content="French">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0084ff">
+    <link rel="canonical" href="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/">
+    
+    <!-- ========== Aperçu WhatsApp / Facebook / Google ========== -->
+    <meta property="og:title" content="Le bazar de Nobsy - Bons deals et articles variés">
+    <meta property="og:description" content="Découvre les meilleurs deals et articles variés à petits prix sur Le bazar de Nobsy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/">
+    <meta property="og:image" content="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/preview.jpg">
+    
+    <title>Le bazar de Nobsy - Bons deals et articles variés</title>
+    
+    <!-- ========== STYLE MINIMAL ========== -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .wrapper {
+            max-width: 480px;
+        }
+        h1 {
+            font-size: clamp(28px, 6vw, 40px);
+            margin: 0 0 12px;
+            font-weight: 700;
+        }
+        p {
+            font-size: clamp(16px, 3.5vw, 18px);
+            opacity: 0.9;
+            margin: 0 0 28px;
+        }
+        .btn {
+            display: inline-block;
+            background: #0084ff;
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s ease, background 0.2s ease;
+            box-shadow: 0 8px 20px rgba(0, 132, 255, 0.3);
+        }
+        .btn:hover {
+            background: #006fd6;
+            transform: translateY(-2px);
+        }
+    </style>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🎮 Vancyr Ludo</h1>
-            <p>Bienvenue dans notre jeu interactif</p>
-        </header>
-        
-        <main>
-            <section class="game-section">
-                <div class="score-board">
-                    <div class="score">
-                        <h3>Score</h3>
-                        <p id="score">0</p>
-                    </div>
-                    <div class="level">
-                        <h3>Niveau</h3>
-                        <p id="level">1</p>
-                    </div>
-                </div>
-                
-                <div class="game-area">
-                    <button id="gameBtn" class="game-btn">Cliquez ici!</button>
-                </div>
-                
-                <div class="controls">
-                    <button id="startBtn" class="btn btn-primary">Démarrer</button>
-                    <button id="resetBtn" class="btn btn-secondary">Réinitialiser</button>
-                </div>
-            </section>
-            
-            <section class="info-section">
-                <h2>Comment jouer</h2>
-                <ul>
-                    <li>Cliquez sur le bouton "Cliquez ici!" autant que possible</li>
-                    <li>Chaque clic augmente votre score</li>
-                    <li>Progressez de niveau tous les 10 points</li>
-                    <li>Défier vos amis pour le meilleur score!</li>
-                </ul>
-            </section>
-        </main>
-        
-        <footer>
-            <p>&copy; 2026 Vancyr Ludo - Tous droits réservés</p>
-        </footer>
-    </div>
-    
-    <script src="script.js"></script>
+    <main class="wrapper">
+        <h1>Le bazar de Nobsy</h1>
+        <p>Bons deals, articles variés, livraison à Joliette, Québec</p>
+        <a href="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/" class="btn" rel="noopener">
+            Visiter notre site →
+        </a>
+    </main>
 </body>
 </html>
