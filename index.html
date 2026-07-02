@@ -1,85 +1,207 @@
 <!DOCTYPE html>
 <html lang="fr-CA">
 <head>
-    <meta name="google-site-verification" content="IroNbFQ_1fITWkuZcoufSlIxAJ4PVPz7RKwwr_o6Gqo" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- ========== SEO + INDEXATION ========== -->
-    <meta name="description" content="Le bazar de Nobsy - Articles variés à bon prix avec livraison à Joliette, Québec">
-    <meta name="keywords" content="bazar, bons deals, achat en ligne, Nobsy, pas cher, Canada, Montréal, Toronto, Joliette">
+    <title>Le Bazar de Nobsy | Bons Deals et Articles Variés à Joliette, QC</title>
+    <meta name="description" content="Découvrez Le Bazar de Nobsy à Joliette. Les meilleurs deals sur l'électronique, la maison et plus encore dans Lanaudière. Livraison locale rapide.">
+    <meta name="keywords" content="bazar Joliette, deals Lanaudière, articles variés pas cher, Nobsy, boutique Québec, achat en ligne Joliette">
     <meta name="author" content="Le bazar de Nobsy">
-    <meta name="language" content="French">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0084ff">
     <link rel="canonical" href="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/">
     
-    <!-- ========== Aperçu WhatsApp / Facebook / Google ========== -->
-    <meta property="og:title" content="Le bazar de Nobsy - Bons deals et articles variés">
-    <meta property="og:description" content="Découvre les meilleurs deals et articles variés à petits prix sur Le bazar de Nobsy">
+    <!-- Verification Google Search Console -->
+    <meta name="google-site-verification" content="IroNbFQ_1fITWkuZcoufSlIxAJ4PVPz7RKwwr_o6Gqo" />
+
+    <!-- ========== Aperçu Réseaux Sociaux (Open Graph) ========== -->
+    <meta property="og:title" content="Le Bazar de Nobsy - Deals et Articles Variés">
+    <meta property="og:description" content="Les meilleurs prix à Joliette sur une vaste sélection d'articles. Visitez notre catalogue en ligne !">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/">
     <meta property="og:image" content="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/preview.jpg">
-    
-    <title>Le bazar de Nobsy - Bons deals et articles variés</title>
-    
-    <!-- ========== STYLE MINIMAL ========== -->
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #f8fafc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .wrapper {
-            max-width: 480px;
-        }
-        h1 {
-            font-size: clamp(28px, 6vw, 40px);
-            margin: 0 0 12px;
-            font-weight: 700;
-        }
-        p {
-            font-size: clamp(16px, 3.5vw, 18px);
-            opacity: 0.9;
-            margin: 0 0 28px;
-        }
-        .btn {
-            display: inline-block;
-            background: #0084ff;
-            color: white;
-            text-decoration: none;
-            padding: 16px 32px;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 18px;
-            transition: transform 0.2s ease, background 0.2s ease;
-            box-shadow: 0 8px 20px rgba(0, 132, 255, 0.3);
-        }
-        .btn:hover {
-            background: #006fd6;
-            transform: translateY(-2px);
-        }
-    </style>
+    <meta name="theme-color" content="#0084ff">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ========== STYLE ========== -->
+    <style>
+        :root {
+            --primary: #0084ff;
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --text: #f8fafc;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(32px, 8vw, 48px);
+            margin: 0 0 10px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .tagline {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 18px 36px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 132, 255, 0.3);
+            margin-bottom: 50px;
+        }
+
+        .btn:hover {
+            background: #006fd6;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 132, 255, 0.4);
+        }
+
+        /* Sections Textuelles pour Google */
+        section {
+            text-align: left;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h2 {
+            font-size: 22px;
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .grid-categories {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .category-item {
+            background: rgba(255,255,255,0.03);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .category-item h3 {
+            font-size: 16px;
+            margin: 0 0 5px;
+        }
+
+        .category-item p {
+            font-size: 13px;
+            opacity: 0.7;
+            margin: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 13px;
+            opacity: 0.5;
+        }
+
+        strong {
+            color: var(--primary);
+        }
+    </style>
 </head>
 <body>
+
     <main class="wrapper">
-        <h1>Le bazar de Nobsy</h1>
-        <p>Bons deals, articles variés, livraison à Joliette, Québec</p>
-        <a href="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/" class="btn" rel="noopener">
-            Visiter notre site →
-        </a>
-    </main>
-</body>
-</html>
+        <!-- En-tête principal -->
+        <header>
+            <h1>Le Bazar de Nobsy</h1>
+            <p class="tagline">Trouvez les meilleurs deals et articles variés à <strong>Joliette, Québec</strong>.</p>
+            <a href="https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/" class="btn">
+                Visiter notre catalogue →
+            </a>
+        </header>
+
+        <!-- Section 1 : À Propos (SEO) -->
+        <section>
+            <h2>Votre boutique locale de bonnes affaires</h2>
+            <p>
+                Bienvenue sur <strong>Le Bazar de Nobsy</strong>, votre référence pour dénicher des produits de qualité à prix réduit. Que vous cherchiez des articles pour la maison, des gadgets électroniques ou des accessoires uniques, nous sélectionnons les meilleurs deals pour la communauté de <strong>Joliette</strong> et de la région de <strong>Lanaudière</strong>.
+            </p>
+        </section>
+
+        <!-- Section 2 : Catégories (SEO) -->
+        <section>
+            <h2>Nos catégories populaires</h2>
+            <div class="grid-categories">
+                <div class="category-item">
+                    <h3>🏠 Maison</h3>
+                    <p>Décoration et articles pratiques pour le foyer.</p>
+                </div>
+                <div class="category-item">
+                    <h3>⚡ Tech</h3>
+                    <p>Électronique et accessoires intelligents.</p>
+                </div>
+                <div class="category-item">
+                    <h3>🎁 Divers</h3>
+                    <p>Cadeaux et trouvailles uniques au meilleur prix.</p>
+                </div>
+                <div class="category-item">
+                    <h3>📦 Livraison</h3>
+                    <p>Service rapide partout à Joliette et environs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 : Pourquoi nous ? (SEO) -->
+        <section>
+            <h2>Pourquoi choisir Le Bazar de Nobsy ?</h2>
+            <ul>
+                <li><strong>Prix imbattables :</strong> Des économies réelles sur chaque article.</li>
+                <li><strong>Service de proximité :</strong> Nous sommes basés à Joliette pour mieux vous servir.</li>
+                <li><strong>Articles vérifiés :</strong> Qualité et satisfaction garanties avant chaque livraison.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <
