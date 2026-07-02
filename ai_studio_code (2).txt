@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://denobsylebazar-cpu.github.io/Bazar-de-nobsy-/sitemap.xml
